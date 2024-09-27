@@ -12,103 +12,122 @@
             background-color: #f4f4f4;
             color: #333;
         }
-        header {
+
+        /* Navbar styling */
+        nav {
             background-color: #4CAF50;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
-            color: white;
         }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         section {
             margin: 20px;
+            padding: 10px;
         }
+
         h1, h2 {
             color: #4CAF50;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
+
         li {
             margin-bottom: 10px;
         }
+
         footer {
             text-align: center;
             padding: 10px;
             background-color: #333;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
+
         a {
             color: #4CAF50;
             text-decoration: none;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add some padding to the section for spacing */
+        section {
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Dr. [Your Name]</h1>
-    <p>Researcher in [Your Research Field]</p>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-</header>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+    </nav>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a researcher specializing in [Your Research Area], currently working at [Your Institution]. My research focuses on [Brief Description of Research]. 
-        I have published work in various areas of [related field] including [mention a few topics].
-    </p>
-</section>
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Dr. [Your Name]'s Research Page</h1>
+        <p>
+            I am a researcher specializing in [Your Research Area], currently working at [Your Institution]. My work focuses on [Brief Overview of Your Research].
+        </p>
+    </section>
 
-<section>
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Artificial Intelligence</li>
-        <li>Machine Learning</li>
-        <li>Natural Language Processing</li>
-        <li>Computer Vision</li>
-        <li>Data Science</li>
-    </ul>
-</section>
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Ph.D. in [Field]</strong>, [University], [Year]</li>
+            <li><strong>M.Tech in [Field]</strong>, [University], [Year]</li>
+            <li><strong>B.Tech in [Field]</strong>, [University], [Year]</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Publications</h2>
-    <ul>
-        <li><strong>[Your Name],</strong> "Title of the Paper," <em>Journal Name</em>, Year.</li>
-        <li><strong>[Your Name],</strong> "Another Paper Title," <em>Conference Name</em>, Year.</li>
-        <li><strong>[Your Name],</strong> "Title of the Paper," <em>Journal Name</em>, Year.</li>
-    </ul>
-</section>
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Research Assistant</strong> - [Institution] (Year-Year)
+                <p>Worked on [brief description of your research project or responsibility].</p>
+            </li>
+            <li><strong>Lecturer</strong> - [Institution] (Year-Year)
+                <p>Taught courses in [list of subjects]. Developed curriculum and supervised student research projects.</p>
+            </li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Project 1:</strong> Description of the project and its relevance to your research work.</li>
-        <li><strong>Project 2:</strong> Another project description and its impact.</li>
-    </ul>
-</section>
+    <!-- Publications Section -->
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Journal Name</em>, Vol. X, No. X, pp. X-X, Year.</li>
+            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Conference Name</em>, City, Year.</li>
+            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Journal Name</em>, Vol. X, No. X, pp. X-X, Year.</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Awards & Honors</h2>
-    <ul>
-        <li>Best Paper Award, Conference Name, Year</li>
-        <li>Research Grant, Organization Name, Year</li>
-        <li>Fellowship, Institution Name, Year</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>
-        Feel free to reach out for collaboration or any queries. You can contact me via <a href="mailto:your.email@example.com">email</a>.
-    </p>
-</section>
-
-<footer>
-    <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> | <a href="https://github.com/yourprofile" target="_blank">GitHub</a></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> | <a href="https://github.com/yourprofile" target="_blank">GitHub</a></p>
+    </footer>
 
 </body>
 </html>
