@@ -3,142 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. [Your Name] - Researcher</title>
+    <title>Manling Li - Academic Webpage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
             color: #333;
         }
-
-        /* Navbar styling */
-        nav {
-            background-color: #4CAF50;
-            padding: 15px;
-            text-align: center;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin: 20px;
-            padding: 10px;
-        }
-
-        h1, h2 {
-            color: #4CAF50;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
+        .content {
+            display: flex;
             margin-top: 20px;
         }
-
-        a {
-            color: #4CAF50;
-            text-decoration: none;
+        .profile {
+            flex: 1;
+            text-align: center;
         }
-
-        a:hover {
-            text-decoration: underline;
+        .profile img {
+            width: 200px;
+            border-radius: 50%;
         }
-
-        /* Add some padding to the section for spacing */
-        section {
-            padding: 20px;
+        .info {
+            flex: 2;
+            padding-left: 20px;
         }
-
+        .social-icons img {
+            width: 30px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Manling Li</h1>
+        <nav>
+            <a href="#" style="color: blue;">Home</a>
+            <a href="#">News</a>
+            <a href="#">Publications</a>
+            <a href="#">Talks</a>
+            <a href="#">Services</a>
+            <a href="#">Awards</a>
+            <a href="#">Teaching</a>
+            <a href="#">Embodied Eval</a>
+        </nav>
+    </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-    </nav>
+    <div class="content">
+        <div class="profile">
+            <img src="cca.jpg" alt="Nazir Shabbir">
+            <p><strong>Assistant Professor</strong></p>
+            <p>Computer Science Department</p>
+            <p>Northwestern University</p>
+            <p><strong>Postdoc</strong></p>
+            <p>Computer Science Department</p>
+            <p>Stanford University</p>
+            <div class="social-icons">
+                <a href="#"><img src="email-icon.png" alt="Email"></a>
+                <a href="#"><img src="google-scholar-icon.png" alt="Google Scholar"></a>
+                <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="info">
+            <p>Hi, there! I'm Manling. I am an assistant professor at the Computer Science department of <a href="#">Northwestern University</a>. In the meantime, I am visiting <a href="#">Stanford University</a>, where I was a postdoc and fortunate to be advised by Prof <a href="#">Jiajun Wu</a> and mentored by Prof <a href="#">Fei-Fei Li</a> with support partially from Microsoft Research Postdoc Fellowship. Prior to this, I obtained my Ph.D. degree in Computer Science at <a href="#">University of Illinois Urbana-Champaign</a> in 2023. I was fortunate to have Prof <a href="#">Heng Ji</a> as my advisor and grateful for the mentorship from Prof <a href="#">Shih-Fu Chang</a>, Prof <a href="#">Kyunghyun Cho</a> and Prof <a href="#">Jiawei Han</a>, and for receiving the support from Microsoft Research PhD Fellowship.</p>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to Dr. [Your Name]'s Research Page</h1>
-        <p>
-            I am a researcher specializing in [Your Research Area], currently working at [Your Institution]. My work focuses on [Brief Overview of Your Research].
-        </p>
-        
-<table>
-    <tr>
-        <td><img src="cca.jpg" alt="Profile Image" width="150" height="150"></td>
-        <td>
-            <h1>Dr. Nazir Shabbir</h1>
-            <p>National Institute of Technology Srinagar [Your Field]</p>
-        </td>
-    </tr>
-</table>
-        
-    </section>
+            <p>I aim to make AI and LLMs beneficial for humans, working at the intersection of language, vision, robotics, and their impact on society. I focus on Knowledgeable Foundation Models for <strong>Reasoning, Planning, Compositionality</strong>, with applications in Embodied AI and AI for science. At the core of my research, I aim to make machines to interact with <strong>physical world</strong> via <strong>multimodal data (Language + X, where X can be robotics, vision, audio, etc)</strong>. The ultimate goal of my research is to promote <strong>trustworthiness and truthfulness</strong> in through a structured view that is easily explainable, highly compositional, and capable of long-horizon reasoning.</p>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Ph.D. in [Field]</strong>, [University], [Year]</li>
-            <li><strong>M.Tech in [Field]</strong>, [University], [Year]</li>
-            <li><strong>B.Tech in [Field]</strong>, [University], [Year]</li>
-        </ul>
-    </section>
+            <p><strong>Bio:</strong> Her work on multimodal knowledge extraction won the <strong>ACL20 Best Demo Paper Award</strong>, the work on scientific information extraction from COVID literature won <strong>NAACL21 Best Demo Paper Award</strong>, the work on controlling LLMs (LM-Steer) won <strong>ACL24 Outstanding Paper Award</strong>. She was a recipient of <strong>Microsoft Research PhD Fellowship</strong> in 2021. She was selected as a <strong>DARPA Riser</strong> in 2022 (nominated by DARPA), and a <strong>EE CS Rising Star</strong> in 2022. She was awarded C.L. Dave and Jane W.S. Liu Award, and has been selected as a Mavis Future Faculty Fellow. <strong>She led 19 students to develop the UIUC information extraction system and ranked 1st in DARPA AIDA evaluation each phase</strong>. She gave tutorials about multimodal knowledge at ACL21, AAAI'21, NAACL22, AAAI'23, CVPR'23, IJCAI'24, and serves as Organizing Committee of ACL25, NAACL25, EMNLP'24, etc</p>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Research Assistant</strong> - [Institution] (Year-Year)
-                <p>Worked on [brief description of your research project or responsibility].</p>
-            </li>
-            <li><strong>Lecturer</strong> - [Institution] (Year-Year)
-                <p>Taught courses in [list of subjects]. Developed curriculum and supervised student research projects.</p>
-            </li>
-        </ul>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Journal Name</em>, Vol. X, No. X, pp. X-X, Year.</li>
-            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Conference Name</em>, City, Year.</li>
-            <li><strong>[Your Name], Co-author</strong>, "Title of Paper," <em>Journal Name</em>, Vol. X, No. X, pp. X-X, Year.</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a> | <a href="https://github.com/yourprofile" target="_blank">GitHub</a></p>
-    </footer>
-
+            <p>📧 Prospective students: I have 3-5 PhD positions and 1 postdoc position in Fall 2025 or later. Please...</p>
+        </div>
+    </div>
 </body>
 </html>
